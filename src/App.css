@@ -16,6 +16,10 @@ html,body{
         font-size:12px !important;
         padding: 0.2rem !important;
     }
+    td a {
+        padding:0.2rem !important;
+        font-size: 12px !important
+    }
     
     
   
