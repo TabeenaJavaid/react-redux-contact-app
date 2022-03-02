@@ -40,7 +40,7 @@ const Home = () => {
           <td>{contact.email}</td>
           <td>{contact.number}</td>
           <td>
-            <Link to={`/edit/${contact.id}`} style={{fontSize:'12px',padding:'0.2rem'}} className='btn btn-small btn-primary mx-2 '>Edit</Link>
+            <Link to={`/edit/${contact.id}`}  className='btn btn-small btn-primary mx-2 '>Edit</Link>
             <button onClick ={() => handleDelete(contact.id)} type='button' className='btn btn-small btn-danger'>Delete</button>
           </td>
         </tr>
