@@ -29,19 +29,23 @@ const handleSubmit = e => {
   if(checkNumber){
     return toast.error('This number already exists!')
   }
+
   dispatch(addContact(data))
   toast.success('Student added successfully!')
   navigate('/')
 }
 
-const data =  (contacts.length >0) && {
+const data =  (contacts.length >0) ? {
   id: contacts[contacts.length - 1].id +1,
   name,
   email,
   number
-}
+} : {id: 0,
+  name,
+  email,
+  number }
 
-
+console.log(data)
 
 
   return (
