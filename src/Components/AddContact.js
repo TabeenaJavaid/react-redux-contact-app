@@ -34,12 +34,13 @@ const handleSubmit = e => {
   navigate('/')
 }
 
-const data = {
+const data =  (contacts.length >0) && {
   id: contacts[contacts.length - 1].id +1,
   name,
   email,
   number
 }
+
 
 
 
